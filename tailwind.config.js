@@ -1,7 +1,10 @@
 module.exports = {
-  purge: [
-    './src/**/*.html',
-  ],
+  purge: {
+    content: ['./src/**/*.html'],
+    options: {
+      whitelist: ['line-through'],
+    }
+  },
   theme: {
     fontFamily: {
       sans: ['sans-serif'],
